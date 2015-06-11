@@ -6,6 +6,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{25A226A8-F513-4569-A31F-6016CFFFC0F2}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -18,6 +20,8 @@ Global
 		{90556D31-D5EF-4CFB-8CC2-2533B5D74C81}.Debug|x86.Build.0 = Debug|x86
 		{90556D31-D5EF-4CFB-8CC2-2533B5D74C81}.Release|x86.ActiveCfg = Release|x86
 		{90556D31-D5EF-4CFB-8CC2-2533B5D74C81}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
