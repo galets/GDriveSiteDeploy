@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System.IO;
 using System.Linq;
+using System.Net;
 
 namespace GDriveSiteDeployCli
 {
@@ -87,6 +88,13 @@ namespace GDriveSiteDeployCli
                 #else
                 Console.Error.WriteLine("Error: {0}", ex.Message);
                 #endif
+
+                var webEx = ex as WebException;
+                if (webEx != null && webEx.Status == WebExceptionStatus.SendFailure)
+                {
+                    Console.Error.WriteLine("This error may be fixable by running 'mozroots --import'");
+                }
+
                 return 2;
             }
         }
